@@ -9,8 +9,7 @@
     width: 100vw;
     background-color: white;
     transform: translateX(0);
-   animation: loader-out 1.5s 3.5s ease-out forwards;
-
+    animation: loader-out 1.5s 3.5s ease-out forwards;
     z-index: 5;
     &__title {
         font-family: 'Shrikhand';
