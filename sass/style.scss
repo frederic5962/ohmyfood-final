@@ -1,0 +1,60 @@
+/* Variables */
+$main-grey: #F3F3F3;
+$grey2: #EAEAEA;
+$almost-black: rgba($color: #000000, $alpha: 0.50);
+$footer-color: #353535;
+$green: #99E2D0;
+$green-font: #008766;
+$purple: #9356DC;
+$box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.10);
+$button-gradient: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+/* Mixins */
+
+/* Général */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    min-width: 320px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.title {
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    filter: brightness(1);
+    border-radius: 50px;
+    background: $button-gradient;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+        filter: brightness(1.2);
+        box-shadow: $box-shadow
+    }
+}
+
+/* imports */
+@import "utils/header";
+@import "pageA";
+@import "utils/footer";
+@import "utils/menus";
+@import "utils/checkbox";
+@import "loader";
+@import "responsive";

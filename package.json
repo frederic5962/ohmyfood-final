@@ -4,7 +4,7 @@
   "description": "Projet 4 OpenC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
   },
   "repository": {
     "type": "git",
@@ -12,9 +12,7 @@
   },
   "author": "frederic loison",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/frederic5962/ohmyfood-final/issues"
-  },
+
   "homepage": "https://github.com/frederic5962/ohmyfood-final#readme",
   "devDependencies": {
     "sass": "^1.77.5"

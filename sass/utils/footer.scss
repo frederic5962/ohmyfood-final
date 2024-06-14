@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: $footer-color;
+    color: white;
+    
+    & h3 {
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        margin-top: 0;
+    }
+    & p .footer__link  {
+        text-decoration: none!important;
+        color: white;
+        margin: 0;
+    }
+    & .fa-utensils {
+        margin-right: 10px;
+
+    }
+    & .fa-handshake-angle {
+        margin-right: 5px;
+    }
+    .footer__link-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

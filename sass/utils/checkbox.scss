@@ -1,0 +1,41 @@
+.checkbox-heart {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    bottom: 5px;
+    right: 5px;
+    appearance: none;
+    height: 50px;
+    width: 50px;
+}
+.checkbox-heart + .checkbox-heart__label {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 25px;
+    & .fa-regular {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+    & .fa-solid {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: $button-gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: bottom;
+        transform: scale(0);
+        transition: transform 0.2s ease-out;
+    }
+}
+.checkbox-heart:checked + .checkbox-heart__label .fa-solid {
+        transform: scale(1);
+}
+.checkbox-heart:checked + .checkbox-heart__label .fa-regular {
+        opacity: 0;
+}

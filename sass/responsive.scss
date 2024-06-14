@@ -1,0 +1,104 @@
+@media (min-width: 1024px) {
+    /** loader **/
+    .loader {
+        &__container {
+            width: 40%;
+            gap: 20px;
+            &--bar {
+                width: 35px;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+    }
+    /** cursor pointer **/
+    .checkbox-heart {
+        cursor: pointer;
+    }
+    .menu__section--card-checkbox {
+        cursor: pointer;
+    }
+    /** responsive de l'accueil **/
+    .fonctionnement {
+        padding: 50px 10%;
+        & h2 {
+            margin-left: 0;
+            margin-bottom: 50px;
+        }
+        &__card-container {
+            flex-direction: row;
+            gap: 50px;
+        }
+        &__card {
+            width: 30%;
+        }
+    }
+    #restaurants {
+        padding: 50px 10%;
+        & h2 {
+            margin: 0;
+            margin-bottom: 50px;
+        }
+    }
+    .restaurants__card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .restaurants__card {
+        width: 45%;
+        height: 350px;
+        transition: transform 0.5s ease;
+        &:hover {
+            transform: scale(1.05);
+        }
+        & img {
+            height: 275px;
+            transition: height 0.5s ease;
+        }
+        &:hover img {
+            height: 350px;
+        }
+    }
+    footer {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        & h3 {
+            margin: 0;
+        }
+        .footer__link-container {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+    /** responsive des menus de restaurants **/
+    img {
+        height: 400px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+        &__title {
+            width: 400px;
+        }
+        &__section {
+            width: 70%;
+        }
+    }
+    .menu-card__text-container {
+        & h3 {
+            font-size: 1.1em;
+        }
+        & p {
+            font-size: 1em;
+        }
+    }
+    .menu-card__checkbox {
+        cursor: pointer;
+    }
+}
