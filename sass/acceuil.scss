@@ -103,8 +103,9 @@
         cursor: default;
         gap: 20px;
         box-shadow: $box-shadow;
-        // transform: scale(1);
-        // transition: transform 0.3s ease;
+        cursor: pointer;
+         transform: scale(1);
+         transition: transform 0.3s ease;
         &--title {
             position: relative;
             left: calc(50% - 80px);
@@ -132,9 +133,7 @@
         & .fa-purple {
             color: $purple;
         }
-        &:hover {
-            transform: scale(1.1);
-        }
+       
     }
 }
 
