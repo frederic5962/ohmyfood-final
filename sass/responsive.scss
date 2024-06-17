@@ -66,9 +66,21 @@
             margin-bottom: 10px;
             
         }
-        & a {
-            padding-top: 0;
+        & p {
+            display: flex;
+            flex-direction: row;
         }
+        & .footer__mail {
+            padding-top: 7px;
+            margin-right: 40px;
+        }
+        & .footer__logo {
+           font-family: "shrikhand";
+           font-size: 1.5em;
+           font-weight: 400;
+           margin-top: -3px;
+        }
+        
         
     }
     /** responsive des menus de restaurants **/
