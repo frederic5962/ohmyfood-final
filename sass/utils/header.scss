@@ -8,6 +8,8 @@ header {
     & .title {
         animation: fade-in-up 1s ease-out forwards;
         cursor: default;
+        font-family: 'Shrikhand';
+        font-size: 30px;
     }
     & a {
         position: absolute;
