@@ -1,6 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Shrikhand&family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto:wght@300;400;500&family=Shrikhand&family=Young+Serif&display=swap");
-/* @charset "UTF-8"; */
 /* Variables */
 /* Général */
 html {
@@ -55,6 +55,8 @@ header {
 header .title {
   animation: fade-in-up 1s ease-out forwards;
   cursor: default;
+  font-family: "Shrikhand";
+  font-size: 30px;
 }
 header a {
   position: absolute;
@@ -277,6 +279,16 @@ footer h3 {
   font-weight: 400;
   margin-top: 0;
   margin-left: 25px;
+  padding: 0;
+}
+footer p {
+  padding: 0;
+  margin: 7px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 6px;
 }
 footer .fa-utensils {
   margin-right: 10px;
@@ -310,7 +322,7 @@ img {
   height: 55px;
   font-family: "Shrikhand";
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .menu__section {
   display: flex;
@@ -479,7 +491,7 @@ img {
   width: 100vw;
   background-color: white;
   transform: translateX(0);
-  animation: loader-out 1.5s 3.5s ease-out forwards;
+  animation: loader-out 1s 2.5s ease-out forwards;
   z-index: 5;
 }
 .loader__title {
@@ -532,20 +544,17 @@ img {
 .loader__container--bar:hover::after {
   opacity: 1;
 }
-.loader .first {
+.loader .one {
   animation: wave 1s 0s ease-in-out alternate infinite;
 }
-.loader .second {
+.loader .two {
   animation: wave 1s 0.2s ease-in-out alternate infinite;
 }
-.loader .third {
+.loader .three {
   animation: wave 1s 0.4s ease-in-out alternate infinite;
 }
-.loader .fourth {
+.loader .four {
   animation: wave 1s 0.6s ease-in-out alternate infinite;
-}
-.loader .fifth {
-  animation: wave 1s 0.8s ease-in-out alternate infinite;
 }
 @keyframes wave {
   from {
@@ -586,8 +595,8 @@ img {
     gap: 20px;
   }
   .loader__container--bar {
-    width: 35px;
-    border-radius: 20px 20px 0 0;
+    width: 25px;
+    border-radius: 20px 20px 20px 20px;
   }
   /** cursor pointer **/
   .checkbox-heart {
