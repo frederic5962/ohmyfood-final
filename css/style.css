@@ -1,6 +1,7 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Shrikhand&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto:wght@300;400;500&family=Shrikhand&family=Young+Serif&display=swap");
+/* @charset "UTF-8"; */
 /* Variables */
-/* Mixins */
 /* Général */
 html {
   scroll-behavior: smooth;
@@ -19,7 +20,7 @@ input::placeholder {
 .title {
   font-family: "Shrikhand";
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 900;
   margin: 15px;
 }
 
@@ -84,22 +85,6 @@ header a:hover {
   }
   to {
     transform: translateX(0);
-  }
-}
-/** animation du header après le loader **/
-#index-title {
-  animation: fade-in-up-index 5.5s ease-out forwards;
-}
-
-@keyframes fade-in-up-index {
-  from {
-    transform: translateY(-100px);
-  }
-  80% {
-    transform: translateY(-100px);
-  }
-  to {
-    transform: translateY(0);
   }
 }
 /** Eviter le scroll pendant l'animation du loader **/
@@ -278,28 +263,26 @@ header a:hover {
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   background: #353535;
   color: white;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
 }
 footer h3 {
   font-family: "Shrikhand";
   font-weight: 400;
   margin-top: 0;
-}
-footer p .footer__link {
-  text-decoration: none !important;
-  color: white;
-  margin: 0;
+  margin-left: 25px;
 }
 footer .fa-utensils {
   margin-right: 10px;
 }
 footer .fa-handshake-angle {
   margin-right: 5px;
-}
-footer .footer__link-container {
-  display: flex;
-  flex-direction: column;
 }
 
 img {
@@ -645,19 +628,24 @@ img {
     width: 45%;
     height: 350px;
   }
+  .restaurants__card img {
+    height: 275px;
+    object-fit: cover;
+  }
   footer {
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    gap: 50px;
+    display: flex;
+    flex-direction: row;
     padding-right: 50px;
     padding-top: 50px;
   }
-  footer h3 {
-    margin: 0;
-  }
-  footer .footer__link-container {
+  footer .footer-container {
+    display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+  footer a {
+    padding-top: 0;
   }
   /** responsive des menus de restaurants **/
   img {

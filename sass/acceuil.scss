@@ -1,22 +1,6 @@
-/** animation du header après le loader **/
 
-#index-title {
-    animation: fade-in-up-index 5.5s ease-out forwards;
-}
-@keyframes fade-in-up-index {
-    from {
-        transform: translateY(-100px);
-    }
-    80% {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
 
 /** Eviter le scroll pendant l'animation du loader **/
-
 
 #index-body {
     overflow: hidden;

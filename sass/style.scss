@@ -8,7 +8,7 @@ $green-font: #008766;
 $purple: #9356DC;
 $box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.10);
 $button-gradient: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-/* Mixins */
+
 
 /* Général */
 html {
@@ -24,10 +24,11 @@ input::placeholder {
     color: black;
 }
 
+
 .title {
     font-family: 'Shrikhand';
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 900;
     margin: 15px;
 }
 

@@ -49,24 +49,27 @@
         width: 45%;
         height: 350px;
         
-        // & img {
-        //     height: 275px;
-        //     transition: height 0.5s ease;
-        // }
+        & img {
+            height: 275px;
+            object-fit: cover; 
+        }
     }
     footer {
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        gap: 50px;
+        display: flex;
+        flex-direction: row;
         padding-right: 50px;
         padding-top: 50px;
-        & h3 {
-            margin: 0;
-        }
-        .footer__link-container {
+        .footer-container {
+            display: flex;
             flex-direction: row;
-            gap: 20px;
+            gap: 30px;
+            margin-bottom: 10px;
+            
         }
+        & a {
+            padding-top: 0;
+        }
+        
     }
     /** responsive des menus de restaurants **/
     img {
