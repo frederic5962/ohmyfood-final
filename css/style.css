@@ -429,10 +429,10 @@ img {
 
 @keyframes menu-section-in {
   from {
-    transform: translateX(100vw);
+    transform: translateY(100vw);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .checkbox-heart {
