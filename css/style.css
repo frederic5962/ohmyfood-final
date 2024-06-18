@@ -133,7 +133,7 @@ header a:hover {
   font-size: 20px;
 }
 
-/* Hero header */
+/* Hook header */
 .hook {
   display: flex;
   flex-direction: column;
@@ -336,7 +336,7 @@ img {
   margin-bottom: 5px;
   margin-top: 0;
 }
-.menu__section--separateur {
+.menu__section--highlight {
   width: 45px;
   height: 3px;
   background: #99E2D0;
